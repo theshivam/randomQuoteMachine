@@ -1,0 +1,9 @@
+body{
+	background-color: green;
+}
+#quoteContainer{
+	background-color: white;
+	text-align: center;
+	height: 150px;
+	width: 500px;
+}
