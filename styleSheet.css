@@ -1,9 +1,41 @@
 body{
 	background-color: green;
 }
-#quoteContainer{
-	background-color: white;
+#headerTitle{
 	text-align: center;
-	height: 150px;
-	width: 500px;
+	color: white;
+	/*background-color: yellow;*/
+	/*padding-left: 600px;*/
+	/*margin-left: 400px;*/
+}
+#quoteContainer{
+	/*max-width: 500px;*/
+	padding: 20px;
+	border-radius: 0px;
+	border: 1px solid black;
+	position: relative;
+	top: 150px;
+}
+#headerContainer{
+	/*float: left;*/
+	/*max-width: 100%;*/
+	background-color: yellow;
+}
+#quote{
+	font-size: 22px;
+	padding:20px;	
+	min-height: 180px;
+	text-align: center;
+	line-height: 36px;
+}
+#author{
+	font-size: 18px;
+	font-style: italic;
+	text-align:right;
+}
+.quotationMarks{
+	font-size : 24px;
+	font-family: lucida calligraphy;
+	font-weight: bold;
+	font-style: italic;
 }

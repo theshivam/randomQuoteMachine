@@ -3,65 +3,39 @@
 <head>
 	<title>Random Quote Generator</title>
 	<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div id="quoteContainer">
-	<div id="quote"></div>
+<div class="container">
+	<header class="row" id="headerContainer">
+		<div class="col-sm-12 col-xs-12 col-md-12 navbar-fixed-top navbar-inverse">
+			<h2 id="headerTitle">Random Quote Generator</h2>
+		</div>		
+	</header>
+<!-- </div> -->
+<!-- <div class="container"> -->
+	<div class="row">
+		<div class="col-sm-2 col-xs-1"></div>
+		<div class="col-sm-8 col-xs-10">
+				<div id="quoteContainer">
+					<div id="quote">
+					</div>
+					<div>
+						<i class="fa fa-facebook-official" style="font-size:26px"></i>
+						<i class="fa fa-twitter-square" style="font-size:26px"></i>
+						<i class="fa fa-linkedin-square" style="font-size:26px"></i>
+						<i class="fa fa-whatsapp" style="font-size:26px"></i>
+						<button class="btn btn-info" id="newQuoteButton">New Quote</button>
+					</div>
+				</div>
+		</div>
+		<div class="col-sm-2 col-xs-1"></div>
+	</div>
 </div>
-<script type="application/javascript">
-
-	console.log("adasdasd");
-// 	function insertReply(content) {
-//     document.getElementById('quote').innerHTML = content;
-// }
-
-// // create script element
-// var script = document.createElement('script');
-// // assing src with callback name
-// script.src = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=insertReply';
-// // insert script to document and load content
-// document.body.appendChild(script);
-
-
-
-
-// 	var requestUrl = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=?';
-// 	var request = new XMLHttpRequest();
-// 	request.open('get',requestUrl);
-// 	request.responseType = 'jsonp';
-// 	request.send();
-// 	request.onload = function() {
-// 	var data = request.response;
-// 	console.log(data[0]);
-// };
-// $(function display(){
-// 	console.log("Shivam");
-// 	// console.log(content);
-// });
-
-
-$.ajax({
-	dataType:"json",
-	type:'GET',
-	url: 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=',
-	success:function(json){
-		console.log("ddddd");
-		console.log(json[0].content);
-		$('#quote').append(json[0].content);
-	},
-	crossDomain:true,
-	cache:false
-});
-	// var cb = Math.round(new Date().getTime() / 1000);
-	// $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&callback=", function(a) {
-	// 		// $("#quote").html("<p>"+a.content+"</p>");
-	// 		console.log(a['content']);
-	// 		console.log(a);
-	// 		// $("#quote").append(a[0].content + "<p>— " + a[0].title + "</p>")
-	// });
-
-</script>
+<script type="text/javascript" src="quoteJs.js"></script>
 </body>
 </html>
