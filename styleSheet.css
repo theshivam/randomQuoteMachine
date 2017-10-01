@@ -1,5 +1,12 @@
-body{
-	background-color: green;
+/*#fullBody{
+	background-color: magenta;
+}*/
+body {
+  background-color: #333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  color: #333;
 }
 #headerTitle{
 	text-align: center;
@@ -10,11 +17,13 @@ body{
 }
 #quoteContainer{
 	/*max-width: 500px;*/
+	background-color: #FFF;
 	padding: 20px;
-	border-radius: 0px;
-	border: 1px solid black;
+	border-radius: 4px;
+	/*border: 2px solid black;*/
 	position: relative;
 	top: 150px;
+	/*display: inline-block;*/
 }
 #headerContainer{
 	/*float: left;*/
@@ -23,7 +32,12 @@ body{
 }
 #quote{
 	font-size: 22px;
-	padding:20px;	
+	font-variant: bold;
+	/*padding:20px;	*/
+	padding-top: 20px;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-bottom: 2px;
 	min-height: 180px;
 	text-align: center;
 	line-height: 36px;
@@ -38,4 +52,19 @@ body{
 	font-family: lucida calligraphy;
 	font-weight: bold;
 	font-style: italic;
+}
+#newQuoteButton{
+	float: right;
+	display: inline-block;
+	color: #FFF;
+	font-size: 16px;
+	font-variant: bold;
+	border-radius: 5px;
+	background-color: #333;
+}
+.socialLinks{
+	padding-right: 8px;
+	padding-left: 16px;
+	float: left;
+	display: inline-block;
 }
