@@ -68,3 +68,14 @@ body {
 	float: left;
 	display: inline-block;
 }
+#developerDetails{
+	position: relative;
+	text-align: center;
+	top: 150px;
+	color: black;
+}
+#shivamAgarwal{
+	font-style: italic;
+	font-size: 24px;
+	font-family: lucida calligraphy;
+}

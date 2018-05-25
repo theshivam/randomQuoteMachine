@@ -43,6 +43,14 @@
 						</div>
 					</div>
 				</div>
+				<!-- <div> -->
+				<div id="developerDetails">
+					<h4>Developed by :- 
+					<span id="shivamAgarwal"><a href="https://www.facebook.com/TheShivamAgarwal">Shivam Agarwal</a></span>
+<!-- <iframe src="https://www.facebook.com/plugins/follow?href=https%3A%2F%2Fwww.facebook.com%2FTheShivamAgarwal&amp;layout=standard&amp;show_faces=true&amp;colorscheme=light&amp;width=450&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe>
+ -->					</h4>
+				</div>
+
 		</div>
 		<div class="col-sm-2 col-xs-1"></div>
 	</div>
